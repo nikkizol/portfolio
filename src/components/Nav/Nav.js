@@ -14,9 +14,7 @@ function Nav() {
           <div className="row">
             <div className="col-9">
               <Link className="logo" to="/">
-                <p className="mz" mb-2>
-                  MZ
-                </p>
+                <p className="mz">MZ</p>
                 <p className="fullName">MYKYTA ZHOLKOVKSYI</p>
               </Link>
             </div>
@@ -42,12 +40,12 @@ function Nav() {
               </div>
             </nav>
             <br />
-            <Route path="/" exact component={Home} />
-            <Route path="/Projects" component={Projects} />
-            <Route path="/Contact" component={Contact} />
           </div>
         </div>
       </header>
+      <Route path="/" exact component={Home} />
+      <Route path="/Projects" component={Projects} />
+      <Route path="/Contact" component={Contact} />
     </Router>
   );
 }

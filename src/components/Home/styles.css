@@ -1,9 +1,40 @@
 .media {
   padding: 10% 5% 10% 5%;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .myPic {
   width: 90%;
+}
+
+.linktoAboutMe {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+}
+.linktoAboutMe:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.linktoAboutMe:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: -10px;
+  border: 1px solid #000000;
+}
+
+.media {
+  /* display: grid; 
+  grid-template-columns: 1fr 1fr;  */
+  /* align-items: center;
+  justify-items: center; */
+  gap: 56px;
+  margin: 0 auto;
+  height: 82vh;
+  /* width: 100%; */
+  padding: 0 auto;
 }

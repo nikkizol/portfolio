@@ -1,18 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./styles.css";
 import pic from "../../images/pic.jpg";
 import AboutMe from "../AboutMe/AboutMe";
 
-function Home() {
+function Home(props) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    props.history.push("/AboutMe");
+  };
+
   return (
-    <Router>
+    <>
       <div className="media">
-        <div class="container">
-          <div class="row">
-            <div class="col"></div>
-            <div class="col-lg-6 gauche mt-5 ">
+        <div className="container">
+          <div className="row">
+            <div className="col"></div>
+            <div className="col-lg-6 gauche mt-5 ">
               <h1 className="mb-1" data-aos="fade-up" data-aos-delay="100">
                 Mykyta Zholkovskyi
               </h1>
@@ -21,17 +25,18 @@ function Home() {
                 Developer. I am results-driven and motivated student, with
                 solution mindset and with passion for web development!
               </p>
-              <Link
-                to="/AboutMe"
+              <a
+                href="#0"
                 className="linktoAboutMe"
+                onClick={handleClick}
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
                 About Me
-              </Link>
+              </a>
             </div>
 
-            <div class="col-lg-4 corps">
+            <div className="col-lg-4 corps">
               <img
                 className="myPic"
                 src={pic}
@@ -40,12 +45,11 @@ function Home() {
                 data-aos-delay="400"
               />
             </div>
-            <div class="col"></div>
+            <div className="col"></div>
           </div>
         </div>
       </div>
-      <Route path="/AboutMe" exact component={AboutMe} />
-    </Router>
+    </>
   );
 }
 

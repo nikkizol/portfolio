@@ -5,7 +5,6 @@ import {
   faLinkedin,
   faInstagram,
   faGithub,
-  f2b6,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./styles.css";
@@ -13,42 +12,29 @@ import "./styles.css";
 function Footer() {
   return (
     <>
-      <div data-aos="fade-up ">
-        <div className="footer">
-          <div className="container footer-container">
-            <div class="row">
-              <div class="col">
-                <h4>Mykyta Zholkovskyi</h4>
-              </div>
-              <div class="col">
-                <a
-                  href="https://www.youtube.com/c/jamesqquick"
-                  className="youtube social"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a
-                  href="https://www.facebook.com/learnbuildteach/"
-                  className="facebook social"
-                >
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-                <a
-                  href="https://www.twitter.com/jamesqquick"
-                  className="twitter social"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a
-                  href="https://www.instagram.com/learnbuildteach"
-                  className="instagram social"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </div>
-              <div class="col">
-                <h4>©2020</h4>
-              </div>
+      <div className="phantom"></div>
+      <div className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h4 className="footerLogo">MZ</h4>
+            </div>
+            <div className="col-sm">
+              <a href="https://github.com/nikkizol">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://www.facebook.com/learnbuildteach/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="https://www.facebook.com/amthau">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://www.instagram.com/nikita_zhol/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </div>
+            <div className="col">
+              <h5>©2020</h5>
             </div>
           </div>
         </div>

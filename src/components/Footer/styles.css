@@ -1,17 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 .footer {
   text-align: center;
-  margin: auto;
   color: black;
   margin-top: 96px;
-  padding-top: 56px;
+  padding-top: 36px;
   padding-bottom: 56px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
   -webkit-box-shadow: 0px -7px 14px -10px rgba(189, 189, 189, 0.88);
   -moz-box-shadow: 0px -7px 14px -10px rgba(189, 189, 189, 0.88);
   box-shadow: 0px -7px 14px -10px rgba(189, 189, 189, 0.88);
+  height: 60px;
 }
 
 .footer a {
   color: black;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.footerLogo {
+  font-family: "Bangers", cursive;
+}
+
+.phantom {
+  display: block;
+  padding: 56px;
+  height: 60px;
+  width: 100%;
 }

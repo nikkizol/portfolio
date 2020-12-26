@@ -19,8 +19,8 @@ function Nav() {
                 <p className="fullName">MYKYTA ZHOLKOVKSYI</p>
               </Link>
             </div>
-            <nav className="navbar navbar-expand-lg navbar-light">
-              <div className="collpase navbar-collapse">
+            <nav className="navbar navbar-expand-lg navbar-light nav-menu-desktop">
+              <div className="navbar-toggle" data-toggle="collapse">
                 <ul className="navbar-nav mr-auto">
                   <li className="navbar-item">
                     <Link to="/" className="nav-link dark active">

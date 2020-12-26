@@ -9,10 +9,11 @@ import Footer from "./components/Footer/Footer";
 function App() {
   AOS.init();
   return (
-    <>
+    <div>
       <Nav />
+      <div id="content"></div>
       <Footer />
-    </>
+    </div>
   );
 }
 
